@@ -3,7 +3,7 @@ import { useState } from "react";
 import Course from "../Course/Course";
 
 
-const Courses = () => {
+const Courses = ({handleTotalCredit}) => {
 
     const [courses, setCourses] = useState([]);
 
@@ -16,7 +16,7 @@ const Courses = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:w-3/4">
             {
-                courses.map(course=><Course key={course.id} course={course}></Course>)
+                courses.map(course=><Course handleTotalCredit={handleTotalCredit} key={course.id} course={course}></Course>)
             }
         </div>
     );

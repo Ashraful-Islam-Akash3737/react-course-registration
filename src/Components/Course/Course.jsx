@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Course = ({ course }) => {
+const Course = ({ course, handleTotalCredit }) => {
     const {  name, description, photo, price, credit } = course;
     return (
         <div className="p-4 bg-white rounded-lg">
@@ -12,7 +12,7 @@ const Course = ({ course }) => {
                     <p className="text-[16px] font-medium text-[#777676] ">Price: {price}</p>
                     <p className="text-[16px] font-medium text-[#777676] ">Credit: {credit}hr</p>
                 </div>
-                <button className='bg-[#2F80ED] text-center w-full font-semibold text-[18px] py-2 px-24 rounded-lg text-white'>Select</button>
+                <button onClick={()=>handleTotalCredit(course)} className='bg-[#2F80ED] text-center w-full font-semibold text-[18px] py-2 px-24 rounded-lg text-white'>Select</button>
             </div>
         </div>
     );
