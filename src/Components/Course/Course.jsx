@@ -10,7 +10,7 @@ const Course = ({ course }) => {
                 <p className="text-sm font-normal mb-5 text-[#777676]">{description}</p>
                 <div className="flex items-center justify-between mx-auto gap-4 mb-6">
                     <p className="text-[16px] font-medium text-[#777676] ">Price: {price}</p>
-                    <p className="text-[16px] font-medium text-[#777676] ">Credit: {credit}</p>
+                    <p className="text-[16px] font-medium text-[#777676] ">Credit: {credit}hr</p>
                 </div>
                 <button className='bg-[#2F80ED] text-center w-full font-semibold text-[18px] py-2 px-24 rounded-lg text-white'>Select</button>
             </div>

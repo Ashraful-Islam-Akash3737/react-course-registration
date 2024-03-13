@@ -9,7 +9,7 @@ function App() {
   return (
     <div className='max-w-7xl mx-auto  p-4'>
       <Header></Header>
-      <div className="flex flex-col-reverse md:flex-row items-start justify-between">
+      <div className="flex flex-col-reverse gap-6 md:gap-0 md:flex-row items-start justify-between">
         <Courses></Courses>
         <Cart></Cart>
       </div>
